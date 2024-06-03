@@ -97,5 +97,5 @@ void Serie::calculaDuracion(){
         Temporadas += episodios[index].getTemporada();
     }
 
-    duracion = Temporadas;
+    duracion = Temporadas; 
 }

@@ -72,7 +72,7 @@ double Video::getCalificacion(){
 
     //Métodos particulares
  string Video::str(){
-    return iD + ' ' + nombre + ' ' + to_string(duracion) + ' ' + genero + ' ' + to_string(calificacion);
+    return;
 }
 
 
