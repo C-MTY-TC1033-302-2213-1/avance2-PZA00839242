@@ -13,66 +13,66 @@ según corresponda.
 using namespace std;
 
 Video::Video(){
-    Id = "0000";
-    Nombre = "Pablo Zapata";
-    Duracion = 10000;
-    Genero = "Masculino";
-    Calificacion = 100;
+    iD = "0000";
+    nombre = "Pablo Zapata";
+    duracion = 10000;
+    genero = "Masculino";
+    calificacion = 100;
 }
 
-Video::Video(string _Id, string _Nombre, int _Duracion, string _Genero, double _CalificacionPromedio){
-    Id = _Id;
-    Nombre = _Nombre;
-    Duracion = _Duracion;
-    Genero = _Genero;
-    Calificacion = _CalificacionPromedio;
+Video::Video(string _iD, string _Nombre, int _Duracion, string _Genero, double _CalificacionPromedio){
+    iD = _iD;
+    nombre = _Nombre;
+    duracion = _Duracion;
+    genero = _Genero;
+    calificacion = _CalificacionPromedio;
 }
 
     //Métodos modificadores - setters 
-void Video::setId(string _Id){
-    Id = _Id;
+void Video::setID(string _iD){
+    iD = _iD;
 }
 
 void Video::setNombre(string _Nombre){
-    Nombre = _Nombre;
+    nombre = _Nombre;
 }
 
 void Video::setDuracion(int _Duracion){
-    Duracion = _Duracion;
+    duracion = _Duracion;
 }
 
 void Video::setGenero(string _Genero){
-    Genero = _Genero;
+    genero = _Genero;
 }
 
 void Video::setCalificacion(double _CalificacionPromedio){
-    Calificacion = _CalificacionPromedio;
+    calificacion = _CalificacionPromedio;
 }
 
     //Métodos de acceso - getters
 string Video::getId(){
-    return Id;
+    return iD;
 }
 
 string Video::getNombre(){
-    return Nombre;
+    return nombre;
 }
 
 int Video::getDuracion(){
-    return Duracion;
+    return duracion;
 }
 
 string Video::getGenero(){
-    return Genero;
+    return genero;
 }
 
 double Video::getCalificacion(){
-    return Calificacion;
+    return calificacion;
 }
 
     //Métodos particulares
  string Video::str(){
-    return Id + ' ' + Nombre + ' ' + to_string(Duracion) + ' ' + Genero + ' ' + to_string(Calificacion);
+    return iD + ' ' + nombre + ' ' + to_string(duracion) + ' ' + genero + ' ' + to_string(calificacion);
 }
 
 

@@ -21,9 +21,9 @@ using namespace std;
 
 class Episodio{
 private:
-    string Titulo;
-    int Temporada;
-    int Calificacion;
+    string titulo;
+    int temporada;
+    int calificacion;
 
 public:
     //Constructores

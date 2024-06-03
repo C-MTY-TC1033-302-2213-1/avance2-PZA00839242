@@ -15,27 +15,27 @@ según corresponda.
 using namespace std;
 
 Pelicula::Pelicula():Video(){
-    Oscares = 100;
+    oscares = 100;
     
 }
 
-Pelicula::Pelicula(string _Id, string _Nombre, int _Duracion,
-string _Genero, double _Calificacion,int _Oscares):Video(_Id, _Nombre,_Duracion, _Genero, _Calificacion){
-    Oscares = _Oscares;
+Pelicula::Pelicula(string _iD, string _Nombre, int _Duracion,
+string _Genero, double _Calificacion,int _Oscares):Video(_iD, _Nombre,_Duracion, _Genero, _Calificacion){
+    oscares = _Oscares;
 }
 
     //Métodos modificadores
 void Pelicula::setOscares(int _Oscares){
-    Oscares = _Oscares;
+    oscares = _Oscares;
 }
 
     //Métodos de acceso
 int Pelicula::getOscares(){
-    return Oscares;
+    return oscares;
 }
 
     //Métodos particulares
 string Pelicula::str(){
     //Tenemos acceso directo a los atributos de la clase padre porque son protected
-    return Id + ' ' + Nombre + ' ' + to_string(Duracion) + ' ' + Genero + ' ' + to_string(Calificacion) + ' ' + to_string(Oscares);
+    return iD + ' ' + nombre + ' ' + to_string(duracion) + ' ' + genero + ' ' + to_string(calificacion) + ' ' + to_string(oscares);
 }

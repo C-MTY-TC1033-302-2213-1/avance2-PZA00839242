@@ -18,8 +18,8 @@ Serie::Serie():Video(){
     //Solo vamos a inicializar cantidad
     cantidad = 0;
 }
-Serie::Serie(string _Id, string _Nombre, int _Duracion,
-    string _Genero, double _Calificacion):Video(_Id, _Nombre,_Duracion, _Genero, _Calificacion){
+Serie::Serie(string _iD, string _Nombre, int _Duracion,
+    string _Genero, double _Calificacion):Video(_iD, _Nombre,_Duracion, _Genero, _Calificacion){
 
 }
 
@@ -71,7 +71,8 @@ double Serie::calculaPromedio(){
 string Serie::str(){
     string Eps;
 
-    Eps = Video::str() + ' ' + to_string(cantidad) + "\n";
+    Eps = iD + ' ' + nombre + ' ' + to_string(duracion) + ' ' + genero + ' ' 
+    + to_string(calificacion) + ' ' + to_string(cantidad) + "\n";
 
     for(int index = 0; index < cantidad; index ++){
         Eps +=  episodios[index].str() + "\n";
@@ -89,8 +90,12 @@ void Serie::agregaEpisodio(Episodio episodio){
 }
 
 void Serie::calculaDuracion(){
-    int duracion = 0;
+    int Temporadas;
+
+    Temporadas = 0;
     for(int index = 0; index < cantidad ; index++){
-        duracion += episodios[index].getTemporada();
+        Temporadas += episodios[index].getTemporada();
     }
+
+    duracion = Temporadas;
 }

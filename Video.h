@@ -25,20 +25,20 @@ using namespace std;
 
 class Video{
 protected:
-    string Id;
-    string Nombre;
-    int Duracion;
-    string Genero;
-    double Calificacion;
+    string iD;
+    string nombre;
+    int duracion;
+    string genero;
+    double calificacion;
 
 public:
     //Constructores
     Video();
-    Video(string _Id, string _Nombre, int _Duracion,
+    Video(string _iD, string _Nombre, int _Duracion,
     string _Genero, double _Calificacion);
 
     //Métodos modificadores - setters 
-    void setId(string _Id);
+    void setID(string _iD);
     void setNombre(string _Nombre);
     void setDuracion(int _Duracion);
     void setGenero(string _Genero);

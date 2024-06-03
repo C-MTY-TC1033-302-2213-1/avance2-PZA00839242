@@ -22,7 +22,7 @@ using namespace std;
 //Clase Pelicula es derivada de Video
 class Pelicula : public Video{
 private:
-    int Oscares;
+    int oscares;
 
 public:
 
